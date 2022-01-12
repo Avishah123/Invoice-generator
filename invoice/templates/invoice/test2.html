@@ -1,0 +1,16 @@
+
+
+
+
+<h1>Display</h1>
+
+{% if invoice %}
+{% for item in invoice %}
+
+Name : {{item.customer }} | Qty : {{item.quantity }} | Rate : {{item.rate }}| Service : {{item.service }} | Amount :  {{item.amount }}  <br>
+
+{% endfor %}
+   
+{% else %}
+
+{% endif %}
